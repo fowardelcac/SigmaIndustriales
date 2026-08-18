@@ -1,0 +1,171 @@
+/* =========================================================
+   PÁGINA NOSOTROS
+   ========================================================= */
+
+.about-page {
+    width: 100%;
+    padding: 40px 40px 100px;
+    background-color: #f8f8f9;
+    display: flex;
+    justify-content: center;
+}
+
+.about-page-container {
+    width: 100%;
+    max-width: 1280px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.breadcrumbs a {
+    color: var(--color-gris);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+    color: var(--color-negro);
+}
+
+.breadcrumbs i {
+    font-size: 10px;
+    color: #a3a3a3;
+}
+
+.breadcrumbs span {
+    color: var(--color-negro);
+    font-weight: 500;
+}
+
+/* Layout de la página */
+
+.about-page-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.about-page-text {
+    flex: 1.1;
+    max-width: 620px;
+}
+
+.about-page-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-negro);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+    margin-bottom: 28px;
+}
+
+.about-page-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-gris);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Lista con líneas divisoras */
+
+.about-details {
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.detail-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.detail-label {
+    width: 160px;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: var(--color-negro);
+}
+
+.detail-value {
+    color: var(--color-gris);
+    line-height: 1.5;
+}
+
+/* Imagen lateral */
+
+.about-page-image {
+    flex: 0.9;
+    max-width: 580px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.about-page-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* =========================================================
+   RESPONSIVE - PÁGINA NOSOTROS
+   ========================================================= */
+
+@media (max-width: 1024px) {
+    .about-page-content {
+        gap: 40px;
+    }
+
+    .about-page-text h1 {
+        font-size: 38px;
+    }
+
+    .detail-label {
+        width: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page {
+        padding: 30px 20px 60px;
+    }
+
+    .about-page-content {
+        flex-direction: column;
+    }
+
+    .about-page-text,
+    .about-page-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-page-text h1 {
+        font-size: 32px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .detail-label {
+        width: 100%;
+    }
+}
